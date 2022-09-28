@@ -6,7 +6,22 @@ module.exports = {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    container: {
+      center: true,
+    },
+    fontFamily : {
+      'sans': ['Lato', 'sans-serif'],
+      'serif': ['Merriweather', 'serif'],
+      'mono': ['Menlo', 'monospace'],
+      'display': ['Oswald', 'sans-serif'],
+      'body': ['Lato', 'sans-serif']
+    },
+    extend: {
+      colors: {
+        'primary': '#4540dc',
+        'accent': '#918eea' 
+      }
+    },
   },
   plugins: [],
 }
