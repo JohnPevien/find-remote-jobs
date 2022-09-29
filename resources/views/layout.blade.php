@@ -6,7 +6,7 @@
   <link href={{ asset('css/app.css') }} rel="stylesheet">
 </head>
 <body>
-  <header class="sticky top-0 bg-white shadow-sm flex flex-row  px-8 py-2 items-center justify-between">
+  <header id="nav" class="sticky top-0 bg-transparent  flex flex-row  px-8 py-3 items-center justify-between transition-all transition-duration-200">
     <div class="h-full pt-2">
       <img class="w-24" src="{{ url('/site-logo.png') }}" alt="site logo">
     </div>
@@ -29,5 +29,7 @@
   <main class="mt-10 container">
     @yield('content');
   </main>
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
