@@ -1,3 +1,1 @@
-require('./bootstrap');
-require('./nav');
-
+require("./bootstrap");
