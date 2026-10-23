@@ -26,6 +26,6 @@ Route::get('/hello', function(){
 Route::get('/listings', function(){
     return view('listings', [
         'heading' => 'Latest Listings',
-        'listings' => Listing::all()
+        'listings' => Listing::paginate(15)
     ]);
 });
