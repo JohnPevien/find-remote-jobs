@@ -21,6 +21,8 @@
 @endforeach
 </section>
 
+{{ $listings->links() }}
+
 @else 
 <p> No listings found </p>
 
